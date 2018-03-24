@@ -22,7 +22,7 @@ class Enemy{
 
 
         // Check for collision between player and enemies
-    if (player.x >= this.x - 10 && player.x <= this.x + 10 && player.y >= this.y - 3 && player.y <= this.y + 3) {
+    if (player.x >= this.x - 87 && player.x <= this.x + 87 && player.y >= this.y - 78 && player.y <= this.y + 78) {
        player.x = 200;
        player.y = 380;
      }
@@ -53,10 +53,10 @@ class Player{
 
   }
   update(dt){
-    if (this.y < 0) {
+    if (this.y < 0 || this.y > 450 || this.x > 420 || this.x < 0) {
      this.x = 200;
      this.y = 380;
- }
+    }
   }
   render(){
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);

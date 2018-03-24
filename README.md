@@ -7,6 +7,9 @@
 
 ## Usage
 
+  Drag the index.html file into browser to launch game.
+
+  Use the arrow keys to navigate
 
 
 #### Clone Repository:
